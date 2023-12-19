@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SendToYou</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css"> <!-- Enlaza tu hoja de estilos aquí si es necesario -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/boostStyle.css">
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Company logo" height="30" class="d-inline-block align-top">
-            SendToYou
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Company logo" height="30" class="d-inline-block align-top">
+                SendToYou
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="docs/onlyCss.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -37,8 +39,8 @@
             </div>
             <div class="col-md-6">
                 <div class="search-box mt-3">
-                    <input type="text" class="form-control" placeholder="Buscar...">
-                    <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button type="submit" class="btn btn-primary mt-2">Search</button>
                 </div>
             </div>
         </div>
@@ -46,17 +48,40 @@
 
     <main class="container mt-3">
         <section id="news">
-            <h2>Last News</h2>
-        </section>
+            <h2>Latest News</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="news1.jpg" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Privacy Innovation: Shipments without Revealing Addresses</h5>
+                        <p class="card-text">At SendToYou, we're excited to announce our latest privacy breakthrough. We've introduced an innovative system that allows our users to send packages without sharing the physical address. Now, you only need to share the username, keeping personal information safe and secure.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="news2.jpg" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Shipments: Ensuring Fast Deliveries</h5>
+                        <p class="card-text">Speed up your shipments with our premium products! SendToYou offers premium services that guarantee fast delivery of your packages. We've significantly reduced shipping times, providing a quick and reliable option for our users.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="news3.jpg" class="card-img-top" alt="News Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Featured Achievement: Reduction in Shipping Time</h5>
+                        <p class="card-text">We're thrilled to share our latest achievement: a noteworthy reduction in shipping time. Thanks to our logistical and technological improvements, we've optimized our processes to ensure your packages arrive faster than ever. At SendToYou, we're committed to providing the best shipping experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
 
         <section id="products">
             <h2>Our Products</h2>
-            <!-- Aquí puedes agregar contenido de productos utilizando las clases de Bootstrap -->
+            <!-- You can add product content here using Bootstrap classes -->
         </section>
     </main>
 
     <aside class="container mt-3">
-        <!-- Contenido de la barra lateral aquí -->
+        <!-- Sidebar content here -->
     </aside>
 
     <!-- Footer -->
@@ -66,18 +91,12 @@
                 <p>&copy; 2023 SendToYou. All rights reserved.</p>
             </div>
             <div class="col-md-6">
-                <div class="float-md-right">
-                    <a href="#privacy-policy" class="mr-2">Privacy Policy</a> |
+                <div class="float-md-end">
+                    <a href="#privacy-policy" class="me-2">Privacy Policy</a> |
                     <a href="#terms-of-use">Terms of Use</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS y dependencias -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
