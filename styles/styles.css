@@ -1,27 +1,3 @@
-/*
-body {
-    font-family: 'Arial', sans-serif;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navbar{
-    background-color: #f8f9fa;
-    li {
-        display: inline-block;
-        margin: 0 10px;
-        
-    }
-    a {
-        float: left;
-        text-decoration: none;
-    }
-    a:visited{
-        color 
-    }
-    
-}
-*/
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -34,7 +10,7 @@ nav {
     padding: 13px 20px;
 }
 
-.container a:visited{
+.container a{
     color: black;
 }
 
